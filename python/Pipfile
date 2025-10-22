@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+cr-xmt = {file = "cr-xmt", editable = true}
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+cosmic-ray = "*"
+pyright = "*"
+
+[requires]
+python_version = "3.13"
+
+[scripts]
+lint = "flake8 . --ignore=E203,E501,W503,W504"
+pytype = "pytype src"
+fix = "black . --line-length=128"
+test = "pytest --cov=src --cov-report=html"

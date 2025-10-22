@@ -1,0 +1,46 @@
+{
+    "version": "1.1.406",
+    "time": "1760915499669",
+    "generalDiagnostics": [
+        {
+            "file": "/Users/itagakimasaki/dev/test_mutation/python/src/example_parse.py",
+            "severity": "error",
+            "message": "\"load_grammar\" is not exported from module \"parso\"",
+            "range": {
+                "start": {
+                    "line": 51,
+                    "character": 20
+                },
+                "end": {
+                    "line": 51,
+                    "character": 32
+                }
+            },
+            "rule": "reportPrivateImportUsage"
+        },
+        {
+            "file": "/Users/itagakimasaki/dev/test_mutation/python/src/example_parse.py",
+            "severity": "error",
+            "message": "\"python\" is not a known attribute of module \"parso\"",
+            "range": {
+                "start": {
+                    "line": 56,
+                    "character": 34
+                },
+                "end": {
+                    "line": 56,
+                    "character": 40
+                }
+            },
+            "rule": "reportAttributeAccessIssue"
+        }
+    ],
+    "summary": {
+        "filesAnalyzed": 4,
+        "errorCount": 2,
+        "warningCount": 0,
+        "informationCount": 0,
+        "timeInSec": 0.949
+    }
+}
+
